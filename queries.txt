@@ -1,0 +1,11 @@
+1. Find all people who are publishers.
+Person and Publisher
+
+2. Find all texts written in greek.
+Text and inverse(languageOf) value Greek
+
+3. Find all texts with title Second_Title.
+Text and hasTitle value Second_Title
+
+4. Find all texts that were published in 2001.
+Text and inverse(yearOfPublicationOf) value 2001

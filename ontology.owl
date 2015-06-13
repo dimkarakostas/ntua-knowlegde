@@ -1,0 +1,560 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-9 "http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#"
+     xml:base="http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:untitled-ontology-9="http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#categoryOf -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;categoryOf">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Category"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;Text"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#hasTitle -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;hasTitle">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Text"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;Title"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#languageOf -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;languageOf">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Language"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;Text"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#publishedAt -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;publishedAt">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Medium"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Text"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#publisherOf -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;publisherOf">
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Publisher"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;Text"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#typeOf -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;typeOf">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Text"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Text_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#writerOf -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;writerOf">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Text"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Writer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#writtenIn -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;writtenIn">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&untitled-ontology-9;Language"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Text"/>
+        <owl:inverseOf rdf:resource="&untitled-ontology-9;languageOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#yearOfPublicationOf -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-9;yearOfPublicationOf">
+        <rdfs:range rdf:resource="&untitled-ontology-9;Text"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-9;Year_of_publication"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Blog -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Blog">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Medium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Category -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Category"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Language -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Language"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Magazine -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Magazine">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Medium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Medium -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Medium"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Newspaper -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Newspaper">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Medium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Person -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Publisher -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Publisher">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Text -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Text"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Text_Type -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Text_Type"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Title -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Title"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Writer -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Writer">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-9;Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Year_of_publication -->
+
+    <owl:Class rdf:about="&untitled-ontology-9;Year_of_publication"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#1991 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;1991">
+        <rdf:type rdf:resource="&untitled-ontology-9;Year_of_publication"/>
+        <yearOfPublicationOf rdf:resource="&untitled-ontology-9;Fourth_Text"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#1992 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;1992">
+        <rdf:type rdf:resource="&untitled-ontology-9;Year_of_publication"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#2001 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;2001">
+        <rdf:type rdf:resource="&untitled-ontology-9;Year_of_publication"/>
+        <yearOfPublicationOf rdf:resource="&untitled-ontology-9;Third_Text"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#2002 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;2002">
+        <rdf:type rdf:resource="&untitled-ontology-9;Year_of_publication"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#2011 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;2011">
+        <rdf:type rdf:resource="&untitled-ontology-9;Year_of_publication"/>
+        <yearOfPublicationOf rdf:resource="&untitled-ontology-9;Second_Text"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#2012 -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;2012">
+        <rdf:type rdf:resource="&untitled-ontology-9;Year_of_publication"/>
+        <yearOfPublicationOf rdf:resource="&untitled-ontology-9;First_Text"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Anne -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Anne">
+        <rdf:type rdf:resource="&untitled-ontology-9;Person"/>
+        <rdf:type rdf:resource="&untitled-ontology-9;Publisher"/>
+        <writerOf rdf:resource="&untitled-ontology-9;Second_Text"/>
+        <publisherOf rdf:resource="&untitled-ontology-9;Third_Text"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Article -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Article">
+        <rdf:type rdf:resource="&untitled-ontology-9;Text_Type"/>
+        <typeOf rdf:resource="&untitled-ontology-9;First_Text"/>
+        <typeOf rdf:resource="&untitled-ontology-9;Second_Text"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Breaking_news -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Breaking_news">
+        <rdf:type rdf:resource="&untitled-ontology-9;Category"/>
+        <categoryOf rdf:resource="&untitled-ontology-9;First_Text"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Daily_Paper -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Daily_Paper">
+        <rdf:type rdf:resource="&untitled-ontology-9;Medium"/>
+        <rdf:type rdf:resource="&untitled-ontology-9;Newspaper"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#English -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;English">
+        <rdf:type rdf:resource="&untitled-ontology-9;Language"/>
+        <languageOf rdf:resource="&untitled-ontology-9;First_Text"/>
+        <languageOf rdf:resource="&untitled-ontology-9;Fourth_Text"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#First_Text -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;First_Text">
+        <rdf:type rdf:resource="&untitled-ontology-9;Text"/>
+        <writtenIn rdf:resource="&untitled-ontology-9;English"/>
+        <hasTitle rdf:resource="&untitled-ontology-9;First_Title"/>
+        <publishedAt rdf:resource="&untitled-ontology-9;blogspot.gr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#First_Title -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;First_Title">
+        <rdf:type rdf:resource="&untitled-ontology-9;Title"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Fourth_Text -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Fourth_Text">
+        <rdf:type rdf:resource="&untitled-ontology-9;Text"/>
+        <writtenIn rdf:resource="&untitled-ontology-9;English"/>
+        <hasTitle rdf:resource="&untitled-ontology-9;Fourth_Title"/>
+        <publishedAt rdf:resource="&untitled-ontology-9;The_Other_Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Fourth_Title -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Fourth_Title">
+        <rdf:type rdf:resource="&untitled-ontology-9;Title"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#French -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;French">
+        <rdf:type rdf:resource="&untitled-ontology-9;Language"/>
+        <languageOf rdf:resource="&untitled-ontology-9;Second_Text"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Greece -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Greece">
+        <rdf:type rdf:resource="&untitled-ontology-9;Category"/>
+        <categoryOf rdf:resource="&untitled-ontology-9;Second_Text"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Greek -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Greek">
+        <rdf:type rdf:resource="&untitled-ontology-9;Language"/>
+        <languageOf rdf:resource="&untitled-ontology-9;Third_Text"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Interview -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Interview">
+        <rdf:type rdf:resource="&untitled-ontology-9;Text_Type"/>
+        <typeOf rdf:resource="&untitled-ontology-9;Third_Text"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Jenny -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Jenny">
+        <rdf:type rdf:resource="&untitled-ontology-9;Person"/>
+        <rdf:type rdf:resource="&untitled-ontology-9;Publisher"/>
+        <rdf:type rdf:resource="&untitled-ontology-9;Writer"/>
+        <writerOf rdf:resource="&untitled-ontology-9;First_Text"/>
+        <publisherOf rdf:resource="&untitled-ontology-9;First_Text"/>
+        <publisherOf rdf:resource="&untitled-ontology-9;Second_Text"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Jim -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Jim">
+        <rdf:type rdf:resource="&untitled-ontology-9;Person"/>
+        <rdf:type rdf:resource="&untitled-ontology-9;Writer"/>
+        <writerOf rdf:resource="&untitled-ontology-9;Third_Text"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#John -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;John">
+        <rdf:type rdf:resource="&untitled-ontology-9;Person"/>
+        <rdf:type rdf:resource="&untitled-ontology-9;Writer"/>
+        <writerOf rdf:resource="&untitled-ontology-9;First_Text"/>
+        <writerOf rdf:resource="&untitled-ontology-9;Fourth_Text"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Julia -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Julia">
+        <rdf:type rdf:resource="&untitled-ontology-9;Person"/>
+        <rdf:type rdf:resource="&untitled-ontology-9;Writer"/>
+        <writerOf rdf:resource="&untitled-ontology-9;Second_Text"/>
+        <writerOf rdf:resource="&untitled-ontology-9;Third_Text"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Kevin -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Kevin">
+        <rdf:type rdf:resource="&untitled-ontology-9;Person"/>
+        <rdf:type rdf:resource="&untitled-ontology-9;Publisher"/>
+        <writerOf rdf:resource="&untitled-ontology-9;Second_Text"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#News -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;News">
+        <rdf:type rdf:resource="&untitled-ontology-9;Text_Type"/>
+        <typeOf rdf:resource="&untitled-ontology-9;Fourth_Text"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Second_Text -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Second_Text">
+        <rdf:type rdf:resource="&untitled-ontology-9;Text"/>
+        <publishedAt rdf:resource="&untitled-ontology-9;Daily_Paper"/>
+        <writtenIn rdf:resource="&untitled-ontology-9;French"/>
+        <hasTitle rdf:resource="&untitled-ontology-9;Second_Title"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Second_Title -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Second_Title">
+        <rdf:type rdf:resource="&untitled-ontology-9;Title"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Sports -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Sports">
+        <rdf:type rdf:resource="&untitled-ontology-9;Category"/>
+        <categoryOf rdf:resource="&untitled-ontology-9;Third_Text"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#The_Magazine -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;The_Magazine">
+        <rdf:type rdf:resource="&untitled-ontology-9;Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#The_Other_Magazine -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;The_Other_Magazine">
+        <rdf:type rdf:resource="&untitled-ontology-9;Magazine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Third_Text -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Third_Text">
+        <rdf:type rdf:resource="&untitled-ontology-9;Text"/>
+        <writtenIn rdf:resource="&untitled-ontology-9;Greek"/>
+        <publishedAt rdf:resource="&untitled-ontology-9;The_Magazine"/>
+        <hasTitle rdf:resource="&untitled-ontology-9;Third_Title"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Third_Title -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Third_Title">
+        <rdf:type rdf:resource="&untitled-ontology-9;Title"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#Weekly_Paper -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;Weekly_Paper">
+        <rdf:type rdf:resource="&untitled-ontology-9;Medium"/>
+        <rdf:type rdf:resource="&untitled-ontology-9;Newspaper"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#World_news -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;World_news">
+        <rdf:type rdf:resource="&untitled-ontology-9;Category"/>
+        <categoryOf rdf:resource="&untitled-ontology-9;Fourth_Text"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jimji_000/ontologies/2015/5/untitled-ontology-9#blogspot.gr -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-9;blogspot.gr">
+        <rdf:type rdf:resource="&untitled-ontology-9;Blog"/>
+        <rdf:type rdf:resource="&untitled-ontology-9;Medium"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
